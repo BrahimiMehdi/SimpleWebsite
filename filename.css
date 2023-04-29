@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    background-color: #054854;
+    height: 100vh;
+    /* vh is view height */
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+h1>span {
+    color: yellow;
+}
+
+h1 {
+    position: relative;
+    font-size: 72px;
+    color: aliceblue;
+    animation: Ungabunga 1s forwards;
+    transition: all 0.6s;
+    transform-origin: center;
+}
+
+p {
+    font-size: 28px;
+    opacity: 0;
+    color: aliceblue;
+    animation: Ungabunga 1s forwards;
+    animation-delay: 1s;
+    transform-origin: center;
+}
+
+img {
+    opacity: 0;
+    animation: Ungabunga 1s forwards;
+    animation-delay: 2s;
+    transform-origin: center;
+
+}
+
+.rats {
+    background-color: black;
+}
+
+@keyframes Ungabunga {
+    0% {
+        opacity: 0;
+        transform: translateY(0px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-40px)  scale(1);
+
+    }
+}
