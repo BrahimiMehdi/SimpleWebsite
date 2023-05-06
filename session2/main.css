@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+body{
+    background-color: rgb(1, 0, 23);
+
+}
+section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url("main.jpg");
+    background-size: cover;
+    background-position: center;
+    gap: 20px;
+    animation: scaleUp 1.5s forwards ease-in-out;
+}
+section > h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    z-index: 3;
+    letter-spacing: 50px;
+    opacity: 0;
+    animation: goUp 0.8s forwards ease-in-out;
+    animation-delay: 0.8s;
+    position: relative;
+    left: 20px;
+}
+section > h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 226, 94);
+    z-index: 3;
+    letter-spacing: 15px;
+    opacity: 0;
+    animation: goUp 0.8s forwards ease-in-out;
+    animation-delay: 1.2s;
+}
+div{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(1, 0, 23, 0.724);
+}
+
+@keyframes scaleUp {
+    0%{
+        transform:scale(0.9);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+@keyframes goUp {
+    0%{
+        transform:translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
